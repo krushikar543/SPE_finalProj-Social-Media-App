@@ -9,4 +9,4 @@
     #     dest: "{{ playbook_dir }}/docker-compose.yml"
 
     - name : Run Docker Compose 
-      command: docker-compose up
+      command: docker-compose up -d
