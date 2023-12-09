@@ -1,0 +1,15 @@
+version : '3'
+services : 
+  frontend : 
+    image : krushikar/frontend_image:latest
+    ports : 
+      - '3000:3000'
+    depends_on : 
+      - backend
+  backend : 
+    image : krushikar/backend_image:latest
+    ports :
+      - '3001:3001'
+    environment : 
+      - MONGO=mongodb+srv://krushikar:LSncGHKQ1WHhjvNc@cluster0.3xj17bx.mongodb.net/?retryWrites=true&w=majority
+      - JWT=somesecretkeyveryhardtocrack

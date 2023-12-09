@@ -1,0 +1,25 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:client": "cd client && npm test",
+    "test:server": "cd server && npm test",
+    "test": "npm run test:client && npm run test:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krushikar543/Social-Media-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krushikar543/Social-Media-App/issues"
+  },
+  "homepage": "https://github.com/krushikar543/Social-Media-App#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
