@@ -99,3 +99,15 @@ Sat, 09 Dec 2023 06:41:49 GMT GET /posts 304 - - 266.128 ms {}
 Sat, 09 Dec 2023 06:41:49 GMT GET /assets/kru2.jpg 404 154 - 0.257 ms {}
 Sat, 09 Dec 2023 06:41:49 GMT GET /assets/ 404 146 - 0.547 ms {}
 Sat, 09 Dec 2023 06:41:49 GMT GET /users/6569b513998b1521bbba6c0b/friends 304 - - 513.283 ms {}
+Sat, 09 Dec 2023 06:59:57 GMT POST /auth/login 200 600 - 5907.279 ms {"email":"poi@gmail.com","password":""}
+Sat, 09 Dec 2023 06:59:57 GMT POST /auth/login 500 40 - 340.096 ms {"email":"poi@gmail.com","password":""}
+Sat, 09 Dec 2023 06:59:58 GMT POST /auth/login 400 28 - 319.830 ms {"email":"po@gmail.com","password":""}
+Sat, 09 Dec 2023 07:03:24 GMT POST /auth/login 200 600 - 5173.262 ms {"email":"poi@gmail.com","password":""}
+Sat, 09 Dec 2023 07:03:25 GMT POST /auth/login 500 40 - 337.900 ms {"email":"poi@gmail.com","password":""}
+Sat, 09 Dec 2023 07:03:25 GMT POST /auth/login 400 28 - 334.854 ms {"email":"po@gmail.com","password":""}
+Sat, 09 Dec 2023 07:14:28 GMT POST /auth/login 200 600 - 5221.356 ms {"email":"poi@gmail.com","password":""}
+Sat, 09 Dec 2023 07:14:29 GMT POST /auth/login 500 40 - 353.704 ms {"email":"poi@gmail.com","password":""}
+Sat, 09 Dec 2023 07:14:29 GMT POST /auth/login 400 28 - 334.262 ms {"email":"po@gmail.com","password":""}
+Sat, 09 Dec 2023 07:16:43 GMT POST /auth/login 200 600 - 5621.150 ms {"email":"poi@gmail.com","password":""}
+Sat, 09 Dec 2023 07:16:44 GMT POST /auth/login 500 40 - 337.639 ms {"email":"poi@gmail.com","password":""}
+Sat, 09 Dec 2023 07:16:44 GMT POST /auth/login 400 28 - 335.707 ms {"email":"po@gmail.com","password":""}
