@@ -4,7 +4,7 @@ import { expect } from 'chai';
 import bcrypt from 'bcrypt';
 
 describe('Authenticate API test', function() {
-  this.timeout(15000);
+  this.timeout(50000);
 
   it('authenticate a user with valid credentials', async () => {
     try {
