@@ -107,28 +107,28 @@ const Form = () => {
                 values, errors, touched, handleBlur, handleChange, handleSubmit, setFieldValue, resetForm
             }) => (
                 <form onSubmit={handleSubmit}>
-                    <Box display="grid" gap="30px" gridTemplateColumns="repeat(8, minmax(0, 1fr)" sx = {{"& > grid" : {gridColumn : isNonMobile  ? undefined : "span 2"},
+                    <Box display="grid" gap="30px" gridTemplateColumns="repeat(10, minmax(0, 1fr)" sx = {{"& > grid" : {gridColumn : isNonMobile  ? undefined : "span 2" }, justifyContent: "flex-start",
                 
                 }}>
                     {isRegister && (
                         <>
                         <TextField label = "First Name" onBlur={handleBlur} onChange={handleChange} value = {values.firstName}
                          name = "firstName" error = {Boolean(touched.firstName) && Boolean(errors.firstName)}
-                         helperText = {touched.firstName && errors.firstName} sx = {{ gridColumn : "span 4"}}
+                         helperText = {touched.firstName && errors.firstName} sx = {{ gridColumn : "span 5"}}
                         />
                         <TextField label = "Last Name" onBlur={handleBlur} onChange={handleChange} value = {values.lastName}
                          name = "lastName" error = {Boolean(touched.lastName) && Boolean(errors.lastName)}
-                         helperText = {touched.lastName && errors.lastName} sx = {{ gridColumn : "span 4"}}
+                         helperText = {touched.lastName && errors.lastName} sx = {{ gridColumn : "span 5"}}
                         />
                         <TextField label = "Location" onBlur={handleBlur} onChange={handleChange} value = {values.location}
                          name = "location" error = {Boolean(touched.location) && Boolean(errors.location)}
-                         helperText = {touched.location && errors.location} sx = {{ gridColumn : "span 8"}}
+                         helperText = {touched.location && errors.location} sx = {{ gridColumn : "span 10"}}
                         />
                         <TextField label = "Occupation" onBlur={handleBlur} onChange={handleChange} value = {values.occupation}
                          name = "occupation" error = {Boolean(touched.occupation) && Boolean(errors.occupation)}
-                         helperText = {touched.occupation && errors.occupation} sx = {{ gridColumn : "span 8"}}
+                         helperText = {touched.occupation && errors.occupation} sx = {{ gridColumn : "span 10"}}
                         />
-                        <Box gridColumn="span 8" border= {`1px solid ${palette.neutral.medium}`} borderRadius = "5px" padding="1rem">
+                        <Box gridColumn="span 10" border= {`1px solid ${palette.neutral.medium}`} borderRadius = "5px" padding="1rem">
                             <Dropzone acceptedFiles=".jpg,.png,.jpeg" multiple = {false} onDrop={(acceptedFiles) => 
                               setFieldValue("picture", acceptedFiles[0])
                             }>
@@ -145,11 +145,11 @@ const Form = () => {
 
                         <TextField label = "Email" onBlur={handleBlur} onChange={handleChange} value = {values.email}
                          name = "email" error = {Boolean(touched.email) && Boolean(errors.email)}
-                         helperText = {touched.email && errors.email} sx = {{ gridColumn : "span 8"}}
+                         helperText = {touched.email && errors.email} sx = {{ gridColumn : "span 10"}}
                         />  
                         <TextField label = "Password" type = "password" onBlur={handleBlur} onChange={handleChange} value = {values.password}
                          name = "password" error = {Boolean(touched.password) && Boolean(errors.password)}
-                         helperText = {touched.password && errors.password} sx = {{ gridColumn : "span 8"}}
+                         helperText = {touched.password && errors.password} sx = {{ gridColumn : "span 10"}}
                         />
                     </Box>
 
@@ -165,7 +165,7 @@ const Form = () => {
                         }} sx = {{
                             textDecoration: "underline", color : palette.primary.main, "&:hover" : {cursor : "pointer", color: palette.primary.light,},
                         }}>
-                            {isLogin ? "Don't have an account? Sign Up here" : "Login here"}
+                            {isLogin ? "Register here" : "Login here"}
                         </Typography>
                     </Box>
                 </form>

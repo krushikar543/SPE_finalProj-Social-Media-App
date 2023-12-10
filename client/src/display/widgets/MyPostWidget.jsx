@@ -43,7 +43,7 @@ const MyPostWidget = ({picturePath}) => {
             <FlexBetween gap="1.5rem">
                 <UserImage image = {picturePath} />
                 <InputBase placeholder="Post something..." onChange={(e) => setPost(e.target.value)}
-                value={post} sx ={{width : "100px", backgroundColor : palette.neutral.light, borderRadius: "2rem", p:"1rem 2rem"}}
+                value={post} sx ={{width : "300px", backgroundColor : palette.neutral.light, borderRadius: "2rem", p:"1rem 2rem"}}
                  />
             </FlexBetween>
             {isImage && (
