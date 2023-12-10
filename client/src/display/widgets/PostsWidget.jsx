@@ -35,7 +35,7 @@ const PostsWidget = ({userId, isProfile = false}) => {
 
     return (
         <>
-          {posts && posts.map(
+          {posts && posts.slice().reverse().map(
             ({
               _id, userId, firstName, lastName, description, location, picturePath, userPicturePath, likes, comments,
             }) => (
