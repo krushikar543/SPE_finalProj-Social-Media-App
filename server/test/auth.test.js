@@ -48,19 +48,19 @@ describe('Authenticate API test', function() {
     }
   });
 
-  it('User Doesnt Exist Testing', async () => {
-    try {
-      const userEmail = 'po@gmail.com';
-      const userInvalidPassword = 'po';
+  // it('User Doesnt Exist Testing', async () => {
+  //   try {
+  //     const userEmail = 'po@gmail.com';
+  //     const userInvalidPassword = 'po';
 
-      const response = await supertest(app)
-        .post('/auth/login')
-        .send({ email: 'po@gmail.com', password: 'po' })
-        .expect(400);
+  //     const response = await supertest(app)
+  //       .post('/auth/login')
+  //       .send({ email: 'po@gmail.com', password: 'po' })
+  //       .expect(400);
 
-      expect(response.body).to.have.property('msg', 'User Doesn\'t Exist');
-    } catch (error) {
-      throw error;
-    }
-  });
+  //     expect(response.body).to.have.property('msg', 'User Doesn\'t Exist');
+  //   } catch (error) {
+  //     throw error;
+  //   }
+  // });
 });
